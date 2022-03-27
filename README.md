@@ -41,6 +41,8 @@ The following **additional** features are implemented:
 - [x] Allowed the player the change the theme of the game
 - [x] Fixed the bug that allowed the player to click the button while the sequence was ongoing
 - [x] Fixed the bug that when the player clicked the button and dragged their mouse off, the sound kept going
+- [x] After the player guesses the timer resets, unless they lose their last life.
+- [x] If the timer runs out, the same sequence is played again unless they lose their last life.
 
 ## Video Walkthrough (GIF)
 
@@ -57,6 +59,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
+
 https://www.w3schools.com/css/css_dropdowns.asp
 
 https://www.pixilart.com/draw?ref=home-page#
