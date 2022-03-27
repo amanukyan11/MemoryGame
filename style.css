@@ -1,0 +1,452 @@
+/* a minimalist set of CSS resets */
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.pageContainer {
+  position:relative;
+  min-height:100vh;
+}
+
+.contentWrapper {
+  padding-bottom:60px;
+  margin-top:30px;
+}
+
+.upperSection {
+  display:inline-block;
+  padding:10px;
+  border-radius:10px;
+  margin-bottom: 20px;
+}
+
+.upperSection.OG {
+  background-color: #9A9A7E;
+}
+
+.upperSection.Pkm {
+  background-color: lightgray;
+}
+
+.upperSection.Dgm {
+  background-color: #df4a25;
+}
+
+/* adjust typography defaults */
+/*background color of the website & title*/
+body {
+  margin: 0;
+  font-family: sans-serif;
+  line-height: 1.5;
+  background-color: #AEAEEB;
+  color: black;
+  text-align: center;
+}
+
+body.og {
+  background-color: #AEAEEB;
+  color: black
+}
+
+body.pkm {
+  background: linear-gradient(to right, black 0%, black 50%, white 50%, white 100%);
+  color: gray
+}
+
+body.dgm {
+  background-color: #64a4d8;
+  color: #face70
+}
+
+header {
+  height:50px;
+  top:0;
+  width:100%;
+}
+
+footer {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height:60px;
+}
+
+header.OG {
+  background-color: #9A9A7E;
+}
+
+footer.OG {
+  background-color: #9A9A7E;
+}
+
+header.Pkm {
+  background-color: lightgray;
+}
+
+footer.Pkm {
+  background-color: lightgray;
+}
+
+header.Dgm {
+  background-color: #df4a25;
+}
+
+footer.Dgm {
+  background-color: #df4a25;
+}
+
+/*header font and style*/
+h1 {
+  font-family: verdana, arial, sans-serif;
+  text-align:center;
+}
+
+p {
+  text-align:center;
+}
+
+#menu {
+    text-align:center;
+    user-select:none;
+}
+
+#startBtn {
+  background-color: #338C15;
+  font-weight:bold;
+  color:black;
+}
+
+#stopBtn {
+  background-color: #B50733;
+  font-weight:bold;
+  color:black;
+}
+
+.btnDropDownList{
+  display:none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .btnDropDownList{
+  display:block;
+}
+
+#numBtn, #numBtn ~ .btnDropDownList {
+  background-color: #107D62;
+  color:black;
+}
+
+#gamemodeBtn, #gamemodeBtn ~ .btnDropDownList {
+  background-color: #A68626;
+  color:black;
+}
+
+/*button shape*/
+button {
+  padding: 10px;
+  font-weight:bold;
+}
+/*game button shape*/
+#gameButtonArea > button {
+  width:200px;
+  height:200px;
+  margin-top:2px;
+  border-radius: 10px;
+  z-index: 0;
+  text-align:center;
+}
+
+#gameButtonArea {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
+/*Base Game Button Styles*/
+#button1.original {
+  background: lightgreen;
+}
+#button1:active.original, #button1.lit.original {
+  background: green;
+}
+#button2.original {
+  background: lightblue;
+}
+#button2:active.original, #button2.lit.original {
+  background: blue;
+}
+#button3.original {
+  background: pink;
+}
+#button3:active.original, #button3.lit.original {
+  background: red;
+}
+#button4.original { 
+  background: lightyellow;
+}
+#button4:active.original, #button4.lit.original {
+  background: yellow;
+}
+#button5.original {
+  background: #FFCF76;
+}
+#button5:active.original, #button5.lit.original {
+  background: orange;
+}
+#button6.original {
+  background: #F5CFF8;
+}
+#button6:active.original, #button6.lit.original {
+  background: purple;
+}
+#button7.original {
+  background: #C69A78;
+}
+#button7:active.original, #button7.lit.original {
+  background: #52341D;
+}
+#button8.original { 
+  background: #9D9D9D;
+}
+#button8:active.original, #button8.lit.original {
+  background: black;
+}
+
+/*Pokemon Game Button Styles*/
+#button1.pokemon {
+  background: lightgreen;
+}
+#button1:active.pokemon, #button1.lit.pokemon {
+  background: green;
+}
+
+#button2.pokemon {
+  background: #FFCF76;
+}
+#button2:active.pokemon, #button2.lit.pokemon {
+  background: orange;
+}
+
+#button3.pokemon {
+  background: #C1F3EE;
+}
+#button3:active.pokemon, #button3.lit.pokemon {
+  background: turquoise;
+}
+
+#button4.pokemon {
+  background: #F16491;
+}
+#button4:active.pokemon, #button4.lit.pokemon {
+  background: #B60F44;
+}
+
+#button5.pokemon {
+  background: #F3EA89;
+}
+#button5:active.pokemon, #button5.lit.pokemon {
+  background: yellow;
+}
+
+#button6.pokemon {
+  background: #ADB897;
+}
+#button6:active.pokemon, #button6.lit.pokemon {
+  background: #6D7659;
+}
+
+#button7.pokemon {
+  background: #9D9D9D;
+}
+#button7:active.pokemon, #button7.lit.pokemon {
+  background: black;
+}
+
+#button8.pokemon {
+  background: #D3D0D0;
+}
+#button8:active.pokemon, #button8.lit.pokemon {
+  background: white;
+}
+
+/*Digimon Game Button Styles*/
+#button1.digimon {
+  background: #9BE782;
+}
+#button1:active.digimon, #button1.lit.digimon {
+  background: lime;
+}
+
+#button2.digimon {
+  background: #F3DE75;
+}
+#button2:active.digimon, #button2.lit.digimon {
+  background: #DFBD12;
+}
+
+#button3.digimon {
+  background: #ADB8DA;
+}
+#button3:active.digimon, #button3.lit.digimon {
+  background: #3F66D3;
+}
+
+#button4.digimon {
+  background: #f7f7f7;
+}
+#button4:active.digimon, #button4.lit.digimon {
+  background: #8484b5;
+}
+
+#button5.digimon {
+  background: #F0C17C;
+}
+#button5:active.digimon, #button5.lit.digimon {
+  background: #D6983A;
+}
+
+#button6.digimon {
+  background: #F1A6EA;
+}
+#button6:active.digimon, #button6.lit.digimon {
+  background: #C159B6;
+}
+
+#button7.digimon {
+  background: #8D7EEC;
+}
+#button7:active.digimon, #button7.lit.digimon {
+  background: #4837B5;
+}
+
+#button8.digimon {
+  background: #D66C62;
+}
+#button8:active.digimon, #button8.lit.digimon {
+  background: #AC281C;
+}
+
+.menuBtn {
+  display:inline-block;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+
+.dropdown {
+  display:inline-block;
+}
+
+.btnDropDownList a{
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: block;
+  color: black;
+}
+
+.btnDropDownList a:hover {
+  background-color: gray; 
+  border-radius:0px;
+}
+
+.buttonImages {
+  padding:40px;
+  margin:none;
+  user-select:none;
+  display:none;
+}
+
+.gameButton:active .buttonImages.active, .gameButton.lit .buttonImages.active{
+  display:block;
+}
+
+.heartArea {
+  text-align:center;
+  margin:10px;
+  user-select:none;
+}
+
+.heart {
+  width:50px;
+}
+
+.emptyHeart {
+  width:47px;
+}
+
+.pokeball {
+  width:44px;
+}
+
+.digivice {
+  width:54px;
+}
+
+.fullHeart {
+  width:47px;
+}
+
+.gameButton{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#timer {
+  user-select:none;
+  margin-bottom:10px;
+}
+
+#timer.OG {
+  display:inline-block;
+  padding:25px;
+  background-color: #9A9A7E;
+  margin-top:30px;
+  font-size: 35px;
+  width:100px;
+  height:100px;
+  border-radius:10px;
+}
+
+#timer.Pkm {
+  display:inline-block;
+  padding:25px;
+  background-color: lightgray;
+  margin-top:30px;
+  font-size: 35px;
+  width:100px;
+  height:100px;
+  border-radius:10px;
+}
+
+#timer.Dgm {
+  display:inline-block;
+  padding:25px;
+  background-color: #df4a25;
+  margin-top:30px;
+  font-size: 35px;
+  width:100px;
+  height:100px;
+  border-radius:10px;
+}
+/*set hidden*/
+.hidden {
+  display:none;
+}

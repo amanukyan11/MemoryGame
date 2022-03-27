@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Memory Game</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <div class="pageContainer">
+      <header class="OG" id="header" ></header>
+      <div class="contentWrapper">
+      <!-- this is the start of content -->
+        <div class="upperSection OG" id="panel">
+          <h1>
+            Light and Sound Memory Game
+          </h1>
+
+          <p>
+            Welcome to the game! Repeat back the pattern by pressing buttons.
+          </p>
+
+          <div id="menu">
+            <button id="startBtn"
+                    class="menuBtn"
+                  onclick="startGame()">
+              Start
+            </button>
+            <button id="stopBtn"
+                    class="hidden menuBtn"
+                    onclick="stopGame()">
+              Stop
+            </button>
+            <div class="dropdown"
+               id = "numBtnsDropDown">
+              <button id = "numBtn"
+                      class="menuBtn">
+                Button Count
+              </button>
+
+              <div class="btnDropDownList">
+                <a id="4Btns" href="#">4 Buttons</a>
+                <a id="5Btns" href="#">5 Buttons</a>
+                <a id="6Btns" href="#">6 Buttons</a>
+                <a id="7Btns" href="#">7 Buttons</a>
+                <a id="8Btns" href="#">8 Buttons</a>
+              </div>
+            </div>
+            <div class="dropdown"
+               id = "GamemodeDropdown">
+              <button id = "gamemodeBtn"
+                      class="menuBtn">
+                Gamemode Select
+              </button>
+
+              <div class="btnDropDownList">
+                <a id="originalBtn" href="#">Original</a>
+                <a id="pokemonBtn" href="#">Pokémon Black and White</a>
+                <a id="digimonBtn" href="#">Digimon</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="heartArea">
+            <img id="fullHeart1" class="fullHeart heart" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/output-onlinepngtools%20(11).png?v=1648230385222">
+            <img id="fullHeart2" class="fullHeart heart" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/output-onlinepngtools%20(11).png?v=1648230385222">
+            <img id="fullHeart3" class="fullHeart heart" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/output-onlinepngtools%20(11).png?v=1648230385222">
+            <img id="emptyHeart1" class="emptyHeart heart hidden" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/output-onlinepngtools%20(1).png?v=1648332129802">
+            <img id="emptyHeart2" class="emptyHeart heart hidden" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/output-onlinepngtools%20(1).png?v=1648332129802">
+            <img id="emptyHeart3" class="emptyHeart heart hidden" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/output-onlinepngtools%20(1).png?v=1648332129802">
+            <img id="fullBall1" class="fullBall pokeball hidden" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/pokeball(1).png?v=1648331664123">
+            <img id="fullBall2" class="fullBall pokeball hidden" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/pokeball(1).png?v=1648331664123">
+            <img id="fullBall3" class="fullBall pokeball hidden" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/pokeball(1).png?v=1648331664123">
+            <img id="emptyBall1" class="emptyBall pokeball hidden" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/pixil-frame-0(1).png?v=1648331667749">
+            <img id="emptyBall2" class="emptyBall pokeball hidden" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/pixil-frame-0(1).png?v=1648331667749">
+            <img id="emptyBall3" class="emptyBall pokeball hidden" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/pixil-frame-0(1).png?v=1648331667749">
+            <img id="fullDigivice1" class="fullDigivice digivice hidden" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/pixil-frame-0%20(2).png?v=1648331913718">
+            <img id="fullDigivice2" class="fullDigivice digivice hidden" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/pixil-frame-0%20(2).png?v=1648331913718">
+            <img id="fullDigivice3" class="fullDigivice digivice hidden" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/pixil-frame-0%20(2).png?v=1648331913718">
+            <img id="emptyDigivice1" class="emptyDigivice digivice hidden" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/pixil-frame-0%20(3).png?v=1648331912049.png?v=1648257038863">
+            <img id="emptyDigivice2" class="emptyDigivice digivice hidden" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/pixil-frame-0%20(3).png?v=1648331912049.png?v=1648257038863">
+            <img id="emptyDigivice3" class="emptyDigivice digivice hidden" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/pixil-frame-0%20(3).png?v=1648331912049.png?v=1648257038863">
+          </div>    
+        </div>  
+        <div id="gameButtonArea">
+          <button class="gameButton original" id="button1" onclick="guess(1)" onmousedown="playSound(1)" onmouseup="stopTone()" onmouseleave="stopTone()">     
+            <img class="buttonImages active" id="umbrella" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/output-onlinepngtools%20(4).png?v=1648164767556" draggable="false">
+            <img class="buttonImages" id="snivy" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/ani_bw_495.gif?v=1648258084236" draggable="false">
+            <img class="buttonImages" id="wormmon" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/Wormmon_vg.png?v=1648407315927" draggable="false">
+          </button>
+          <button class="gameButton original" id="button2" onclick="guess(2)" onmousedown="playSound(2)" onmouseup="stopTone()" onmouseleave="stopTone()">
+            <img class="buttonImages active" id="triangle" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/output-onlinepngtools%20(3).png?v=1648164767583" draggable="false">
+            <img class="buttonImages" id="tepig" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/ani_bw_498.gif?v=1648258084281" draggable="false">
+            <img class="buttonImages" id="agumon" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/Agumon_%25282006_anime%2529_vg.png?v=1648257025402" draggable="false">
+          </button>
+          <button class="gameButton original" id="button3" onclick="guess(3)" onmousedown="playSound(3)" onmouseup="stopTone()" onmouseleave="stopTone()">
+            <img class="buttonImages active" id="star" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/output-onlinepngtools%20(2).png?v=1648164767632" draggable="false">
+            <img class="buttonImages" id="oshawott" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/ani_bw_501.gif?v=1648258084576" draggable="false">
+            <img class="buttonImages" id="gabumon" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/Gabumon_vg.png?v=1648257038101" draggable="false">
+          </button>
+          <button class="gameButton original" id="button4" onclick="guess(4)" onmousedown="playSound(4)" onmouseup="stopTone()" onmouseleave="stopTone()">
+            <img class="buttonImages active" id="circle" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/output-onlinepngtools.png?v=1648164767876" draggable="false">
+            <img class="buttonImages" id="zorua" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/ani_bw_570.gif?v=1648258084562" draggable="false">
+            <img class="buttonImages" id="gomamon" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/Gomamon_vg.png?v=1648257038101" draggable="false">
+          </button>
+          <button class="gameButton original hidden" id="button5" onclick="guess(5)" onmousedown="playSound(5)" onmouseup="stopTone()" onmouseleave="stopTone()">
+            <img class="buttonImages active" id="square" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/output-onlinepngtools%20(1).png?v=1648164767661.png?v=1648164767556" draggable="false">
+            <img class="buttonImages" id="emolga" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/ani_bw_587.gif?v=1648258084436" draggable="false">
+            <img class="buttonImages" id="guilmon" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/Guilmon_vg.png?v=1648407315946" draggable="false">
+          </button>
+          <button class="gameButton original hidden" id="button6" onclick="guess(6)" onmousedown="playSound(6)" onmouseup="stopTone()" onmouseleave="stopTone()">         
+            <img class="buttonImages active" id="cone" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/output-onlinepngtools%20(8).png?v=1648168956143" draggable="false">
+            <img class="buttonImages " id="axew" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/ani_bw_610.gif?v=1648258084597" draggable="false">
+            <img class="buttonImages " id="biyomon" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/Biyomon_vg.png?v=1648257038406" draggable="false">
+          </button>
+          <button class="gameButton original hidden" id="button7" onclick="guess(7)" onmousedown="playSound(7)" onmouseup="stopTone()" onmouseleave="stopTone()">         
+            <img class="buttonImages active" id="heart" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/output-onlinepngtools%20(9).png?v=1648169160725" draggable="false">
+            <img class="buttonImages" id="reshiram" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/ani_bw_643.gif?v=1648258084483" draggable="false">
+            <img class="buttonImages" id="gatomon" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/Gatomon_vg.png?v=1648257041697" draggable="false">
+          </button>
+          <button class="gameButton original hidden" id="button8" onclick="guess(8)" onmousedown="playSound(8)" onmouseup="stopTone()" onmouseleave="stopTone()"> 
+            <img class="buttonImages active" id="diamond" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/image.png?v=1648168839268" draggable="false">
+            <img class="buttonImages" id="zekrom" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/ani_bw_644.gif?v=1648258084451" draggable="false">
+            <img class="buttonImages" id="tentamon" src="https://cdn.glitch.global/103b247a-321b-46a7-962f-d90791b11196/Tentomon_vg.png?v=1648257043862" draggable="false">
+          </button>
+        </div>
+        <div class="OG" id="timer" >
+          15
+        </div>
+      </div>
+      <footer class="OG" id="footer" ></footer>
+    </div>
+  </body>
+</html>
+
