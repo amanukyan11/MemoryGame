@@ -58,26 +58,47 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
 https://www.w3schools.com/css/css_dropdowns.asp
+
 https://www.pixilart.com/draw?ref=home-page#
+
 https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
+
 https://www.javatpoint.com/how-to-center-a-button-in-css
+
 https://www.w3schools.com/cssref/css_selectors.asp
+
 https://stackoverflow.com/questions/43374276/html-background-two-colors
+
 https://developer.mozilla.org/en-US/docs/Web/API/Document/body
+
 https://css-tricks.com/best-way-implement-wrapper-css/
+
 https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
 https://www.w3schools.com/howto/howto_css_center-vertical.asp
+
 https://coolors.co/338c15-107d62-a68626-b50733
+
 https://www.geeksforgeeks.org/how-to-create-footer-to-stay-at-the-bottom-of-a-web-page/#:~:text=To%20make%20a%20footer%20fixed,you%20could%20use%20position%3A%20fixed.&text=%3C%20div%20id%20%3D%20%22footer%22,the%20bottom%20of%20the%20page.
+
 https://www.w3schools.com/js/js_htmldom_html.asp
+
 https://developer.mozilla.org/en-US/docs/Web/API/setTimeout
+
 https://stackoverflow.com/questions/9419263/how-to-play-audio
+
 https://stackoverflow.com/questions/42452322/html-css-footer-not-sticking-to-bottom-moving-on-screen-resize
+
 https://www.w3schools.com/css/css_margin.asp
+
 https://www.codegrepper.com/code-examples/whatever/disable+div+click
+
 https://www.pokencyclopedia.info/en/index.php?id=sprites/gen5
+
 https://www.youtube.com/channel/UC9-uedugcOI7xoqduuwGwrg
+
 https://digimon.fandom.com/wiki/Digimon_Wiki
+
 https://www.sounds-resource.com/xbox_360/digimonallstarrumble/
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
