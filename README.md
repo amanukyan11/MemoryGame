@@ -48,10 +48,10 @@ The following **additional** features are implemented:
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
 ![x](http://g.recordit.co/HO3I2uN2FL.gif) Showcasing the buttons functionality
-![x](http://g.recordit.co/qu0x4CA7Ax.gif) Showcasing the first gamemodes buttons
-![x](http://g.recordit.co/ozrpprIJCw.gif) Showcasing the second gamemodes buttons
-![x](http://g.recordit.co/odhHEYJlTd.gif) Showcasing the third gamemodes buttons
-![x](http://g.recordit.co/XlV865EyXx.gif) Showcasing the game and winning with 4 buttons(For the gifs purpose the game only has 4 rounds but normally there is 8)
+![x](http://g.recordit.co/qu0x4CA7Ax.gif) Showcasing the first gamemodes buttons (This game's buttons have a unique sound)
+![x](http://g.recordit.co/ozrpprIJCw.gif) Showcasing the second gamemodes buttons (This game's buttons have a unique sound)
+![x](http://g.recordit.co/odhHEYJlTd.gif) Showcasing the third gamemodes buttons (This game's buttons have a unique sound)
+![x](http://g.recordit.co/XlV865EyXx.gif) Showcasing the game and winning with 4 buttons (For the gifs purpose the game only has 4 rounds but normally there is 8)
 ![x](http://g.recordit.co/jQDl3XfJPS.gif) Showcasing the game and winning with 6 buttons
 ![x](http://g.recordit.co/yVBAAsnr3f.gif) Showcasing the game and winning with 6 buttons
 ![x](http://g.recordit.co/ofPbd1N2m0.gif) Showcasing the game and losing
