@@ -106,7 +106,7 @@ https://www.sounds-resource.com/xbox_360/digimonallstarrumble/
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 
-I would say that the most significant challenge I encountered was figuring out how to change the button sounds depending on the game mode. The steps I took to overcome this challenge were to analyze how the base game assigned the sounds and work backward until I figured it out. 
+I would say that the most significant challenge I encountered was figuring out how to change the button sounds depending on the game mode. The steps I took to overcome this challenge were to analyze how the base game assigned the sounds and work backwards until I figured it out. 
 
 3. What questions about web development do you have after completing your submission? (recommended 100 - 300 words) 
 
@@ -114,7 +114,7 @@ Some questions I have about web development are how to implement security, so ha
 
 4. If you had a few more hours to work on this project, what would you spend them doing (for example: refactoring certain functions, adding additional features, etc). Be specific. (recommended 100 - 300 words) 
 
-At the moment, when the game is over, and the player wins/loses, the final heart does not diminish before the alert pops up and resets the heart. If I had more time, I would try and figure out a way to make the last heart disappear before the "Game Over" alert is called. Also, I think it would be nice when the website is first accessed that there are no buttons, only the title and description, and when the players click, all the buttons appear.
+At the moment, when the game is over, and the player wins/loses, the final heart does not diminish before the alert pops up and resets the heart. If I had more time, I would try and figure out a way to make the last heart disappear before the "Game Over" alert is called. Also, I think it would be nice when the website is first accessed that there are no buttons, only the title and description, and when the player clicks, all the buttons appear.
 
 ## Interview Recording URL Link
 
