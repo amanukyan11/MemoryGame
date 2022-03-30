@@ -35,7 +35,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 - [x] Improved the styling
-- [x] Made the players 3 lifes visible
+- [x] Made the player's 3 lifes visible
 - [x] Made the timer visible
 - [x] Allowed the player to choose how many buttons (4-8) to play with
 - [x] Allowed the player the change the theme of the game
