@@ -4,7 +4,7 @@
 
 Submitted by: Aram Manukyan
 
-Time spent: 26 hours spent in total
+Time spent: 32 hours spent in total
 
 Link to project: (https://glitch.com/edit/#!/yellow-sedate-catshark?path=index.html%3A1%3A0)
 
